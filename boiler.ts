@@ -6,6 +6,7 @@ export const install: InstallBoiler = async () => {
   actions.push({
     action: "generate",
     source: [
+      "git@github.com:boiler-dev/dep-graph-boiler.git",
       "git@github.com:boiler-dev/fn2-boiler.git",
       "git@github.com:boiler-dev/loaded-boiler.git",
       "git@github.com:boiler-dev/logger-boiler.git",
