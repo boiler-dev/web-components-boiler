@@ -1,40 +1,23 @@
-import {
-  InstallBoiler,
-  PromptBoiler,
-  GenerateBoiler,
-  UninstallBoiler,
-} from "boiler-dev"
+import { BoilerAction, InstallBoiler } from "boiler-dev"
 
-export const install: InstallBoiler = async ({
-  cwdPath,
-  files,
-}) => {
-  const actions = []
-  return actions
-}
+export const install: InstallBoiler = async () => {
+  const actions: BoilerAction[] = []
 
-export const prompt: PromptBoiler = async ({
-  cwdPath,
-  files,
-}) => {
-  const prompts = []
-  return prompts
-}
+  actions.push({
+    action: "generate",
+    source: [
+      "git@github.com:boiler-dev/fn2-boiler.git",
+      "git@github.com:boiler-dev/loaded-boiler.git",
+      "git@github.com:boiler-dev/logger-boiler.git",
+      "git@github.com:boiler-dev/patch-boiler.git",
+      "git@github.com:boiler-dev/render-boiler.git",
+      "git@github.com:boiler-dev/render-client-boiler.git",
+      "git@github.com:boiler-dev/render-server-boiler.git",
+      "git@github.com:boiler-dev/router-boiler.git",
+      "git@github.com:boiler-dev/ssr-boiler.git",
+      "git@github.com:boiler-dev/tiny-id-boiler.git",
+    ],
+  })
 
-export const generate: GenerateBoiler = async ({
-  cwdPath,
-  answers,
-  files,
-}) => {
-  const actions = []
-  return actions
-}
-
-export const uninstall: UninstallBoiler = async ({
-  cwdPath,
-  answers,
-  files,
-}) => {
-  const actions = []
   return actions
 }
