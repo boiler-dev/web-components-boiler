@@ -8,6 +8,7 @@ export const install: InstallBoiler = async () => {
     source: [
       "git@github.com:boiler-dev/dep-graph-boiler.git",
       "git@github.com:boiler-dev/fn2-boiler.git",
+      "git@github.com:boiler-dev/form-parser-boiler.git",
       "git@github.com:boiler-dev/loaded-boiler.git",
       "git@github.com:boiler-dev/logger-boiler.git",
       "git@github.com:boiler-dev/patch-boiler.git",
