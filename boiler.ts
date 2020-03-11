@@ -1,6 +1,6 @@
-import { BoilerAction, InstallBoiler } from "boiler-dev"
+import { ActionBoiler, BoilerAction } from "boiler-dev"
 
-export const install: InstallBoiler = async () => {
+export const install: ActionBoiler = async () => {
   const actions: BoilerAction[] = []
 
   actions.push({
